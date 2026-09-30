@@ -1,6 +1,5 @@
 
 
-```markdown
 # IPL 2026: Player Performance & Valuation Analytics
 
 An end-to-end sports data analytics project evaluating the IPL 2026 season. This project bridges player auction valuation (financial ROI) with high-pressure death-over batting performance and dual-axis bowling efficiency to deliver actionable insights for team purse allocation and performance analysis.
@@ -33,7 +32,7 @@ An end-to-end sports data analytics project evaluating the IPL 2026 season. This
 
 ## 🛠️ Project Data Architecture
 
-```text
+
  Raw Delivery & Auction CSVs
             │
             ▼
@@ -45,7 +44,7 @@ An end-to-end sports data analytics project evaluating the IPL 2026 season. This
             ▼
  Interactive Dark-Mode Tableau Executive Dashboard
 
-```
+
 
 1. **`ipl_2026_batting_roi.csv`**: Contains player auction prices, total runs, and calculated cost-per-run metrics.
 2. **`ipl_2026_death_overs.csv`**: Contains ball-by-ball death over aggregates (Overs 15–19, minimum 30 balls filter).
@@ -64,7 +63,7 @@ An end-to-end sports data analytics project evaluating the IPL 2026 season. This
 
 ## 📁 Repository Structure
 
-```text
+
 ├── data/
 │   ├── ipl_2026_batting_roi.csv
 │   ├── ipl_2026_bowling_summary.csv
@@ -75,8 +74,3 @@ An end-to-end sports data analytics project evaluating the IPL 2026 season. This
 │   └── dashboard_preview.png
 └── README.md
 
-```
-
-```
-
-```
