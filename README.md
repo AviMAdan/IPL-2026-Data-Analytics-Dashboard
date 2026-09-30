@@ -11,8 +11,7 @@ An end-to-end sports data analytics project evaluating the IPL 2026 season. This
 
 👉 **[Click Here to View the Live Dashboard on Tableau Public](https://public.tableau.com/app/profile/avdhut.madan/viz/IPL2026PlayerPerformanceValuationAnalytics/Dashboard1)**
 
-![IPL 2026 Performance Dashboard](./assets/ipl_dashboard_preview.png)
-
+![IPL 2026 Performance Dashboard](assets/ipl_dashboard_preview.png)
 ---
 
 ## 💡 Key Analytical Insights Derived
