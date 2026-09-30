@@ -20,7 +20,7 @@ An end-to-end sports data analytics project evaluating the IPL 2026 season. This
 ### 1. Financial ROI & Cost Efficiency (Scatter Plot)
 * **Bargain Performance**: **Vaibhav Suryavanshi** stood out as the highest ROI acquisition, delivering **770+ total runs** at a minimal auction price of **₹0.14 Cr**, yielding an exceptionally low Cost-per-Run metric.
 * **Marquee Performance**: **Virat Kohli** and **Heinrich Klaasen** delivered strong run totals (~650+ and ~620+ runs respectively) but required premium auction/retention investments (₹20+ Cr tier).
-* **Mid-Tier Value**: **B Sai Sudharsan** (~730 runs at ₹8.5 Cr) and **Shubman Gill** (~710 runs at ₹16.5 Cr) proved to be balanced mid-tier performers balancing price with output.
+* **Mid-Tier Value**: **B Sai Sudharsan** (~722 runs at ₹8.5 Cr) and **Shubman Gill** (~732 runs at ₹16.5 Cr) proved to be balanced mid-tier performers balancing price with output.
 
 ### 2. High-Pressure Clutch Hitting (Death Overs Leaderboard)
 * **Closing Over Dominance**: Filtering for players facing a minimum of 30 legal balls in Overs 15–19, **Tilak Varma** led the entire tournament with a strike rate of **256.7**.
