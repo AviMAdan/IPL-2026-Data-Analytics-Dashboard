@@ -1,0 +1,2467 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20262.26.0912.1023                               -->
+<workbook _.fcp.WorkbookFingerprinting.true...author-id='ad1417ab69c0db5e64bf0ebaf43d4a7925630bfafbe7caa938fae5b2c01d8514' _.fcp.WorkbookFingerprinting.true...creator-author-id='526dc3a32104c17f5664e3360d6516e7a1f1c4ea4b21bca6a8d10ba4d80869da' _.fcp.WorkbookFingerprinting.true...creator-license-type='public' _.fcp.WorkbookFingerprinting.true...creator-machine-id='526dc3a32104c17f5664e3360d6516e7a1f1c4ea4b21bca6a8d10ba4d80869da' _.fcp.WorkbookFingerprinting.true...license-type='public' _.fcp.WorkbookFingerprinting.true...machine-id='526dc3a32104c17f5664e3360d6516e7a1f1c4ea4b21bca6a8d10ba4d80869da' original-version='18.1' source-build='2026.2.3 (20262.26.0912.1023)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <ExternalImageContentForZones />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <_.fcp.WorkbookFingerprinting.true...WorkbookFingerprinting />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='IPL2026PlayerPerformanceValuationAnalytics' path='/workbooks' revision='1.3' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='ipl_2026_bowling_summary' inline='true' name='federated.1bbbw6g1sgcx0z17bg6ks10fyn0a' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='ipl_2026_bowling_summary' name='textscan.1sjehnx1pwjsr616c5zbl1auk8n7'>
+            <connection class='textscan' directory='D:/ipl_dashboard_male_project' filename='ipl_2026_bowling_summary.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1sjehnx1pwjsr616c5zbl1auk8n7' name='ipl_2026_bowling_summary.csv' table='[ipl_2026_bowling_summary#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Bowler' ordinal='0' />
+            <column datatype='integer' name='Legal Balls' ordinal='1' />
+            <column datatype='integer' name='Runs Conceded' ordinal='2' />
+            <column datatype='real' name='Wickets Taken' ordinal='3' />
+            <column datatype='real' name='Overs' ordinal='4' />
+            <column datatype='real' name='Economy' ordinal='5' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[ipl_2026_bowling_summary.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Bowler</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Bowler]</local-name>
+            <parent-name>[ipl_2026_bowling_summary.csv]</parent-name>
+            <remote-alias>Bowler</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[ipl_2026_bowling_summary.csv_7D61EB7C658845B8A29A6FB973A5C80E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Legal Balls</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Legal Balls]</local-name>
+            <parent-name>[ipl_2026_bowling_summary.csv]</parent-name>
+            <remote-alias>Legal Balls</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ipl_2026_bowling_summary.csv_7D61EB7C658845B8A29A6FB973A5C80E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Runs Conceded</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Runs Conceded]</local-name>
+            <parent-name>[ipl_2026_bowling_summary.csv]</parent-name>
+            <remote-alias>Runs Conceded</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ipl_2026_bowling_summary.csv_7D61EB7C658845B8A29A6FB973A5C80E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Wickets Taken</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Wickets Taken]</local-name>
+            <parent-name>[ipl_2026_bowling_summary.csv]</parent-name>
+            <remote-alias>Wickets Taken</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ipl_2026_bowling_summary.csv_7D61EB7C658845B8A29A6FB973A5C80E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Overs</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Overs]</local-name>
+            <parent-name>[ipl_2026_bowling_summary.csv]</parent-name>
+            <remote-alias>Overs</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ipl_2026_bowling_summary.csv_7D61EB7C658845B8A29A6FB973A5C80E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Economy</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Economy]</local-name>
+            <parent-name>[ipl_2026_bowling_summary.csv]</parent-name>
+            <remote-alias>Economy</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ipl_2026_bowling_summary.csv_7D61EB7C658845B8A29A6FB973A5C80E]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='ipl_2026_bowling_summary.csv' datatype='table' name='[__tableau_internal_object_id__].[ipl_2026_bowling_summary.csv_7D61EB7C658845B8A29A6FB973A5C80E]' role='measure' type='quantitative' />
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/DELL/AppData/Local/Temp/TableauTemp/#TableauTemp_0qwl0ba1i71t6812xlybq0zm3fva.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='09/29/2026 04:45:34 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Bowler</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Bowler]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Bowler</remote-alias>
+              <ordinal>0</ordinal>
+              <family>ipl_2026_bowling_summary.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>125</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Legal Balls</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Legal Balls]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Legal Balls</remote-alias>
+              <ordinal>1</ordinal>
+              <family>ipl_2026_bowling_summary.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>81</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Runs Conceded</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Runs Conceded]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Runs Conceded</remote-alias>
+              <ordinal>2</ordinal>
+              <family>ipl_2026_bowling_summary.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>108</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Wickets Taken</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Wickets Taken]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Wickets Taken</remote-alias>
+              <ordinal>3</ordinal>
+              <family>ipl_2026_bowling_summary.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>25</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Overs</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Overs]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Overs</remote-alias>
+              <ordinal>4</ordinal>
+              <family>ipl_2026_bowling_summary.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>81</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Economy</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Economy]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Economy</remote-alias>
+              <ordinal>5</ordinal>
+              <family>ipl_2026_bowling_summary.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>105</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Iceland&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='ipl_2026_bowling_summary.csv' id='ipl_2026_bowling_summary.csv_7D61EB7C658845B8A29A6FB973A5C80E'>
+            <properties context=''>
+              <relation connection='textscan.1sjehnx1pwjsr616c5zbl1auk8n7' name='ipl_2026_bowling_summary.csv' table='[ipl_2026_bowling_summary#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='Bowler' ordinal='0' />
+                  <column datatype='integer' name='Legal Balls' ordinal='1' />
+                  <column datatype='integer' name='Runs Conceded' ordinal='2' />
+                  <column datatype='real' name='Wickets Taken' ordinal='3' />
+                  <column datatype='real' name='Overs' ordinal='4' />
+                  <column datatype='real' name='Economy' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='ipl_2026_batting_roi.csv (Multiple Connections)' inline='true' name='federated.1h2m1cl05vkiby0ztwdk50etae66' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='ipl_2026_batting_roi' name='textscan.1ntp8cr1uyopjs19u4lp70xzyl06'>
+            <connection class='textscan' directory='D:/ipl_dashboard_male_project' filename='ipl_2026_batting_roi.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+          <named-connection caption='ipl_2026_bowling_summary' name='textscan.0lid4sm1y4dxf91aznkwf1dyh5yg'>
+            <connection class='textscan' directory='D:/ipl_dashboard_male_project' filename='ipl_2026_bowling_summary.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+          <named-connection caption='ipl_2026_death_overs' name='textscan.16rm31y0vhkpim131zn380w938s5'>
+            <connection class='textscan' directory='D:/ipl_dashboard_male_project' filename='ipl_2026_death_overs.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation type='collection'>
+          <relation connection='textscan.1ntp8cr1uyopjs19u4lp70xzyl06' name='ipl_2026_batting_roi.csv' table='[ipl_2026_batting_roi#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='batter' ordinal='0' />
+              <column datatype='integer' name='Runs_Scored' ordinal='1' />
+              <column datatype='integer' name='Balls_Faced' ordinal='2' />
+              <column datatype='integer' name='Fours' ordinal='3' />
+              <column datatype='integer' name='Sixes' ordinal='4' />
+              <column datatype='real' name='Strike_Rate' ordinal='5' />
+              <column datatype='real' name='Auction_Price_Cr' ordinal='6' />
+              <column datatype='real' name='Auction_Price_Lakhs' ordinal='7' />
+              <column datatype='real' name='Cost_Per_Run_Lakhs' ordinal='8' />
+              <column datatype='integer' name='Total_Boundaries' ordinal='9' />
+              <column datatype='real' name='Cost_Per_Boundary_Lakhs' ordinal='10' />
+            </columns>
+          </relation>
+          <relation connection='textscan.16rm31y0vhkpim131zn380w938s5' name='ipl_2026_death_overs.csv' table='[ipl_2026_death_overs#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='batter' ordinal='0' />
+              <column datatype='integer' name='Death_Runs' ordinal='1' />
+              <column datatype='integer' name='Death_Balls' ordinal='2' />
+              <column datatype='integer' name='Death_Sixes' ordinal='3' />
+              <column datatype='real' name='Death_Strike_Rate' ordinal='4' />
+            </columns>
+          </relation>
+        </relation>
+        <cols>
+          <map key='[Auction_Price_Cr]' value='[ipl_2026_batting_roi.csv].[Auction_Price_Cr]' />
+          <map key='[Auction_Price_Lakhs]' value='[ipl_2026_batting_roi.csv].[Auction_Price_Lakhs]' />
+          <map key='[Balls_Faced]' value='[ipl_2026_batting_roi.csv].[Balls_Faced]' />
+          <map key='[Cost_Per_Boundary_Lakhs]' value='[ipl_2026_batting_roi.csv].[Cost_Per_Boundary_Lakhs]' />
+          <map key='[Cost_Per_Run_Lakhs]' value='[ipl_2026_batting_roi.csv].[Cost_Per_Run_Lakhs]' />
+          <map key='[Death_Balls]' value='[ipl_2026_death_overs.csv].[Death_Balls]' />
+          <map key='[Death_Runs]' value='[ipl_2026_death_overs.csv].[Death_Runs]' />
+          <map key='[Death_Sixes]' value='[ipl_2026_death_overs.csv].[Death_Sixes]' />
+          <map key='[Death_Strike_Rate]' value='[ipl_2026_death_overs.csv].[Death_Strike_Rate]' />
+          <map key='[Fours]' value='[ipl_2026_batting_roi.csv].[Fours]' />
+          <map key='[Runs_Scored]' value='[ipl_2026_batting_roi.csv].[Runs_Scored]' />
+          <map key='[Sixes]' value='[ipl_2026_batting_roi.csv].[Sixes]' />
+          <map key='[Strike_Rate]' value='[ipl_2026_batting_roi.csv].[Strike_Rate]' />
+          <map key='[Total_Boundaries]' value='[ipl_2026_batting_roi.csv].[Total_Boundaries]' />
+          <map key='[batter (ipl_2026_death_overs.csv)]' value='[ipl_2026_death_overs.csv].[batter]' />
+          <map key='[batter]' value='[ipl_2026_batting_roi.csv].[batter]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[ipl_2026_batting_roi.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[ipl_2026_death_overs.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>batter</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[batter]</local-name>
+            <parent-name>[ipl_2026_batting_roi.csv]</parent-name>
+            <remote-alias>batter</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[ipl_2026_batting_roi.csv_637229CD298C42FCB411FC0736732D20]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Runs_Scored</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Runs_Scored]</local-name>
+            <parent-name>[ipl_2026_batting_roi.csv]</parent-name>
+            <remote-alias>Runs_Scored</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ipl_2026_batting_roi.csv_637229CD298C42FCB411FC0736732D20]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Balls_Faced</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Balls_Faced]</local-name>
+            <parent-name>[ipl_2026_batting_roi.csv]</parent-name>
+            <remote-alias>Balls_Faced</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ipl_2026_batting_roi.csv_637229CD298C42FCB411FC0736732D20]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fours</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Fours]</local-name>
+            <parent-name>[ipl_2026_batting_roi.csv]</parent-name>
+            <remote-alias>Fours</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ipl_2026_batting_roi.csv_637229CD298C42FCB411FC0736732D20]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sixes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sixes]</local-name>
+            <parent-name>[ipl_2026_batting_roi.csv]</parent-name>
+            <remote-alias>Sixes</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ipl_2026_batting_roi.csv_637229CD298C42FCB411FC0736732D20]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Strike_Rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Strike_Rate]</local-name>
+            <parent-name>[ipl_2026_batting_roi.csv]</parent-name>
+            <remote-alias>Strike_Rate</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ipl_2026_batting_roi.csv_637229CD298C42FCB411FC0736732D20]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Auction_Price_Cr</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Auction_Price_Cr]</local-name>
+            <parent-name>[ipl_2026_batting_roi.csv]</parent-name>
+            <remote-alias>Auction_Price_Cr</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ipl_2026_batting_roi.csv_637229CD298C42FCB411FC0736732D20]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Auction_Price_Lakhs</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Auction_Price_Lakhs]</local-name>
+            <parent-name>[ipl_2026_batting_roi.csv]</parent-name>
+            <remote-alias>Auction_Price_Lakhs</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ipl_2026_batting_roi.csv_637229CD298C42FCB411FC0736732D20]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cost_Per_Run_Lakhs</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Cost_Per_Run_Lakhs]</local-name>
+            <parent-name>[ipl_2026_batting_roi.csv]</parent-name>
+            <remote-alias>Cost_Per_Run_Lakhs</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ipl_2026_batting_roi.csv_637229CD298C42FCB411FC0736732D20]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total_Boundaries</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total_Boundaries]</local-name>
+            <parent-name>[ipl_2026_batting_roi.csv]</parent-name>
+            <remote-alias>Total_Boundaries</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ipl_2026_batting_roi.csv_637229CD298C42FCB411FC0736732D20]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cost_Per_Boundary_Lakhs</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Cost_Per_Boundary_Lakhs]</local-name>
+            <parent-name>[ipl_2026_batting_roi.csv]</parent-name>
+            <remote-alias>Cost_Per_Boundary_Lakhs</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ipl_2026_batting_roi.csv_637229CD298C42FCB411FC0736732D20]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>batter</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[batter (ipl_2026_death_overs.csv)]</local-name>
+            <parent-name>[ipl_2026_death_overs.csv]</parent-name>
+            <remote-alias>batter</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[ipl_2026_death_overs.csv_1A18798532104DE6A50BF33F279EC17A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Death_Runs</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Death_Runs]</local-name>
+            <parent-name>[ipl_2026_death_overs.csv]</parent-name>
+            <remote-alias>Death_Runs</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ipl_2026_death_overs.csv_1A18798532104DE6A50BF33F279EC17A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Death_Balls</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Death_Balls]</local-name>
+            <parent-name>[ipl_2026_death_overs.csv]</parent-name>
+            <remote-alias>Death_Balls</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ipl_2026_death_overs.csv_1A18798532104DE6A50BF33F279EC17A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Death_Sixes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Death_Sixes]</local-name>
+            <parent-name>[ipl_2026_death_overs.csv]</parent-name>
+            <remote-alias>Death_Sixes</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ipl_2026_death_overs.csv_1A18798532104DE6A50BF33F279EC17A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Death_Strike_Rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Death_Strike_Rate]</local-name>
+            <parent-name>[ipl_2026_death_overs.csv]</parent-name>
+            <remote-alias>Death_Strike_Rate</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ipl_2026_death_overs.csv_1A18798532104DE6A50BF33F279EC17A]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Auction Price Cr' datatype='real' name='[Auction_Price_Cr]' role='measure' type='quantitative' />
+      <column caption='Auction Price Lakhs' datatype='real' name='[Auction_Price_Lakhs]' role='measure' type='quantitative' />
+      <column caption='Balls Faced' datatype='integer' name='[Balls_Faced]' role='measure' type='quantitative' />
+      <column caption='Cost Per Boundary Lakhs' datatype='real' name='[Cost_Per_Boundary_Lakhs]' role='measure' type='quantitative' />
+      <column caption='Cost Per Run Lakhs' datatype='real' name='[Cost_Per_Run_Lakhs]' role='measure' type='quantitative' />
+      <column caption='Death Balls' datatype='integer' name='[Death_Balls]' role='measure' type='quantitative' />
+      <column caption='Death Runs' datatype='integer' name='[Death_Runs]' role='measure' type='quantitative' />
+      <column caption='Death Sixes' datatype='integer' name='[Death_Sixes]' role='measure' type='quantitative' />
+      <column caption='Death Strike Rate' datatype='real' name='[Death_Strike_Rate]' role='measure' type='quantitative' />
+      <column caption='Runs Scored' datatype='integer' name='[Runs_Scored]' role='measure' type='quantitative' />
+      <column caption='Strike Rate' datatype='real' name='[Strike_Rate]' role='measure' type='quantitative' />
+      <column caption='Total Boundaries' datatype='integer' name='[Total_Boundaries]' role='measure' type='quantitative' />
+      <column caption='ipl_2026_batting_roi.csv' datatype='table' name='[__tableau_internal_object_id__].[ipl_2026_batting_roi.csv_637229CD298C42FCB411FC0736732D20]' role='measure' type='quantitative' />
+      <column caption='ipl_2026_death_overs.csv' datatype='table' name='[__tableau_internal_object_id__].[ipl_2026_death_overs.csv_1A18798532104DE6A50BF33F279EC17A]' role='measure' type='quantitative' />
+      <column caption='Batter (Ipl 2026 Death Overs.Csv)' datatype='string' name='[batter (ipl_2026_death_overs.csv)]' role='dimension' type='nominal' />
+      <column caption='Batter' datatype='string' name='[batter]' role='dimension' type='nominal' />
+      <column-instance column='[batter]' derivation='None' name='[none:batter:nk]' pivot='key' type='nominal' />
+      <group caption='Action (Batter)' hidden='true' name='[Action (Batter)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[batter]' />
+        </groupfilter>
+      </group>
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/DELL/AppData/Local/Temp/TableauTemp/#TableauTemp_1u486671sc3utb1cjtlft1a92ynx.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='09/29/2026 04:45:25 PM' username='tableau_internal_user'>
+          <relation type='collection'>
+            <relation name='ipl_2026_batting_roi.csv_637229CD298C42FCB411FC0736732D20' table='[Extract].[ipl_2026_batting_roi.csv_637229CD298C42FCB411FC0736732D20]' type='table' />
+            <relation name='ipl_2026_death_overs.csv_1A18798532104DE6A50BF33F279EC17A' table='[Extract].[ipl_2026_death_overs.csv_1A18798532104DE6A50BF33F279EC17A]' type='table' />
+          </relation>
+          <cols>
+            <map key='[Auction_Price_Cr]' value='[ipl_2026_batting_roi.csv_637229CD298C42FCB411FC0736732D20].[Auction_Price_Cr]' />
+            <map key='[Auction_Price_Lakhs]' value='[ipl_2026_batting_roi.csv_637229CD298C42FCB411FC0736732D20].[Auction_Price_Lakhs]' />
+            <map key='[Balls_Faced]' value='[ipl_2026_batting_roi.csv_637229CD298C42FCB411FC0736732D20].[Balls_Faced]' />
+            <map key='[Cost_Per_Boundary_Lakhs]' value='[ipl_2026_batting_roi.csv_637229CD298C42FCB411FC0736732D20].[Cost_Per_Boundary_Lakhs]' />
+            <map key='[Cost_Per_Run_Lakhs]' value='[ipl_2026_batting_roi.csv_637229CD298C42FCB411FC0736732D20].[Cost_Per_Run_Lakhs]' />
+            <map key='[Death_Balls]' value='[ipl_2026_death_overs.csv_1A18798532104DE6A50BF33F279EC17A].[Death_Balls]' />
+            <map key='[Death_Runs]' value='[ipl_2026_death_overs.csv_1A18798532104DE6A50BF33F279EC17A].[Death_Runs]' />
+            <map key='[Death_Sixes]' value='[ipl_2026_death_overs.csv_1A18798532104DE6A50BF33F279EC17A].[Death_Sixes]' />
+            <map key='[Death_Strike_Rate]' value='[ipl_2026_death_overs.csv_1A18798532104DE6A50BF33F279EC17A].[Death_Strike_Rate]' />
+            <map key='[Fours]' value='[ipl_2026_batting_roi.csv_637229CD298C42FCB411FC0736732D20].[Fours]' />
+            <map key='[Runs_Scored]' value='[ipl_2026_batting_roi.csv_637229CD298C42FCB411FC0736732D20].[Runs_Scored]' />
+            <map key='[Sixes]' value='[ipl_2026_batting_roi.csv_637229CD298C42FCB411FC0736732D20].[Sixes]' />
+            <map key='[Strike_Rate]' value='[ipl_2026_batting_roi.csv_637229CD298C42FCB411FC0736732D20].[Strike_Rate]' />
+            <map key='[Total_Boundaries]' value='[ipl_2026_batting_roi.csv_637229CD298C42FCB411FC0736732D20].[Total_Boundaries]' />
+            <map key='[batter (ipl_2026_death_overs.csv)]' value='[ipl_2026_death_overs.csv_1A18798532104DE6A50BF33F279EC17A].[batter]' />
+            <map key='[batter]' value='[ipl_2026_batting_roi.csv_637229CD298C42FCB411FC0736732D20].[batter]' />
+          </cols>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>batter</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[batter]</local-name>
+              <parent-name>[ipl_2026_batting_roi.csv_637229CD298C42FCB411FC0736732D20]</parent-name>
+              <remote-alias>batter</remote-alias>
+              <ordinal>0</ordinal>
+              <family>ipl_2026_batting_roi.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[ipl_2026_batting_roi.csv_637229CD298C42FCB411FC0736732D20]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Runs_Scored</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Runs_Scored]</local-name>
+              <parent-name>[ipl_2026_batting_roi.csv_637229CD298C42FCB411FC0736732D20]</parent-name>
+              <remote-alias>Runs_Scored</remote-alias>
+              <ordinal>1</ordinal>
+              <family>ipl_2026_batting_roi.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ipl_2026_batting_roi.csv_637229CD298C42FCB411FC0736732D20]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Balls_Faced</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Balls_Faced]</local-name>
+              <parent-name>[ipl_2026_batting_roi.csv_637229CD298C42FCB411FC0736732D20]</parent-name>
+              <remote-alias>Balls_Faced</remote-alias>
+              <ordinal>2</ordinal>
+              <family>ipl_2026_batting_roi.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ipl_2026_batting_roi.csv_637229CD298C42FCB411FC0736732D20]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Fours</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Fours]</local-name>
+              <parent-name>[ipl_2026_batting_roi.csv_637229CD298C42FCB411FC0736732D20]</parent-name>
+              <remote-alias>Fours</remote-alias>
+              <ordinal>3</ordinal>
+              <family>ipl_2026_batting_roi.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ipl_2026_batting_roi.csv_637229CD298C42FCB411FC0736732D20]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sixes</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Sixes]</local-name>
+              <parent-name>[ipl_2026_batting_roi.csv_637229CD298C42FCB411FC0736732D20]</parent-name>
+              <remote-alias>Sixes</remote-alias>
+              <ordinal>4</ordinal>
+              <family>ipl_2026_batting_roi.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ipl_2026_batting_roi.csv_637229CD298C42FCB411FC0736732D20]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Strike_Rate</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Strike_Rate]</local-name>
+              <parent-name>[ipl_2026_batting_roi.csv_637229CD298C42FCB411FC0736732D20]</parent-name>
+              <remote-alias>Strike_Rate</remote-alias>
+              <ordinal>5</ordinal>
+              <family>ipl_2026_batting_roi.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ipl_2026_batting_roi.csv_637229CD298C42FCB411FC0736732D20]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Auction_Price_Cr</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Auction_Price_Cr]</local-name>
+              <parent-name>[ipl_2026_batting_roi.csv_637229CD298C42FCB411FC0736732D20]</parent-name>
+              <remote-alias>Auction_Price_Cr</remote-alias>
+              <ordinal>6</ordinal>
+              <family>ipl_2026_batting_roi.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ipl_2026_batting_roi.csv_637229CD298C42FCB411FC0736732D20]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Auction_Price_Lakhs</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Auction_Price_Lakhs]</local-name>
+              <parent-name>[ipl_2026_batting_roi.csv_637229CD298C42FCB411FC0736732D20]</parent-name>
+              <remote-alias>Auction_Price_Lakhs</remote-alias>
+              <ordinal>7</ordinal>
+              <family>ipl_2026_batting_roi.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ipl_2026_batting_roi.csv_637229CD298C42FCB411FC0736732D20]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Cost_Per_Run_Lakhs</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Cost_Per_Run_Lakhs]</local-name>
+              <parent-name>[ipl_2026_batting_roi.csv_637229CD298C42FCB411FC0736732D20]</parent-name>
+              <remote-alias>Cost_Per_Run_Lakhs</remote-alias>
+              <ordinal>8</ordinal>
+              <family>ipl_2026_batting_roi.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ipl_2026_batting_roi.csv_637229CD298C42FCB411FC0736732D20]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total_Boundaries</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Total_Boundaries]</local-name>
+              <parent-name>[ipl_2026_batting_roi.csv_637229CD298C42FCB411FC0736732D20]</parent-name>
+              <remote-alias>Total_Boundaries</remote-alias>
+              <ordinal>9</ordinal>
+              <family>ipl_2026_batting_roi.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ipl_2026_batting_roi.csv_637229CD298C42FCB411FC0736732D20]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Cost_Per_Boundary_Lakhs</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Cost_Per_Boundary_Lakhs]</local-name>
+              <parent-name>[ipl_2026_batting_roi.csv_637229CD298C42FCB411FC0736732D20]</parent-name>
+              <remote-alias>Cost_Per_Boundary_Lakhs</remote-alias>
+              <ordinal>10</ordinal>
+              <family>ipl_2026_batting_roi.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ipl_2026_batting_roi.csv_637229CD298C42FCB411FC0736732D20]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>batter</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[batter (ipl_2026_death_overs.csv)]</local-name>
+              <parent-name>[ipl_2026_death_overs.csv_1A18798532104DE6A50BF33F279EC17A]</parent-name>
+              <remote-alias>batter</remote-alias>
+              <ordinal>11</ordinal>
+              <family>ipl_2026_death_overs.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>51</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[ipl_2026_death_overs.csv_1A18798532104DE6A50BF33F279EC17A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Death_Runs</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Death_Runs]</local-name>
+              <parent-name>[ipl_2026_death_overs.csv_1A18798532104DE6A50BF33F279EC17A]</parent-name>
+              <remote-alias>Death_Runs</remote-alias>
+              <ordinal>12</ordinal>
+              <family>ipl_2026_death_overs.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>43</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ipl_2026_death_overs.csv_1A18798532104DE6A50BF33F279EC17A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Death_Balls</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Death_Balls]</local-name>
+              <parent-name>[ipl_2026_death_overs.csv_1A18798532104DE6A50BF33F279EC17A]</parent-name>
+              <remote-alias>Death_Balls</remote-alias>
+              <ordinal>13</ordinal>
+              <family>ipl_2026_death_overs.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>35</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ipl_2026_death_overs.csv_1A18798532104DE6A50BF33F279EC17A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Death_Sixes</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Death_Sixes]</local-name>
+              <parent-name>[ipl_2026_death_overs.csv_1A18798532104DE6A50BF33F279EC17A]</parent-name>
+              <remote-alias>Death_Sixes</remote-alias>
+              <ordinal>14</ordinal>
+              <family>ipl_2026_death_overs.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ipl_2026_death_overs.csv_1A18798532104DE6A50BF33F279EC17A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Death_Strike_Rate</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Death_Strike_Rate]</local-name>
+              <parent-name>[ipl_2026_death_overs.csv_1A18798532104DE6A50BF33F279EC17A]</parent-name>
+              <remote-alias>Death_Strike_Rate</remote-alias>
+              <ordinal>15</ordinal>
+              <family>ipl_2026_death_overs.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>50</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ipl_2026_death_overs.csv_1A18798532104DE6A50BF33F279EC17A]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:batter:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;JC Buttler&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;B Sai Sudharsan&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Ishan Kishan&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;H Klaasen&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;KL Rahul&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Iceland&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='ipl_2026_batting_roi.csv' id='ipl_2026_batting_roi.csv_637229CD298C42FCB411FC0736732D20'>
+            <properties context=''>
+              <relation connection='textscan.1ntp8cr1uyopjs19u4lp70xzyl06' name='ipl_2026_batting_roi.csv' table='[ipl_2026_batting_roi#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='batter' ordinal='0' />
+                  <column datatype='integer' name='Runs_Scored' ordinal='1' />
+                  <column datatype='integer' name='Balls_Faced' ordinal='2' />
+                  <column datatype='integer' name='Fours' ordinal='3' />
+                  <column datatype='integer' name='Sixes' ordinal='4' />
+                  <column datatype='real' name='Strike_Rate' ordinal='5' />
+                  <column datatype='real' name='Auction_Price_Cr' ordinal='6' />
+                  <column datatype='real' name='Auction_Price_Lakhs' ordinal='7' />
+                  <column datatype='real' name='Cost_Per_Run_Lakhs' ordinal='8' />
+                  <column datatype='integer' name='Total_Boundaries' ordinal='9' />
+                  <column datatype='real' name='Cost_Per_Boundary_Lakhs' ordinal='10' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='ipl_2026_batting_roi.csv_637229CD298C42FCB411FC0736732D20' table='[Extract].[ipl_2026_batting_roi.csv_637229CD298C42FCB411FC0736732D20]' type='table' />
+            </properties>
+          </object>
+          <object caption='ipl_2026_death_overs.csv' id='ipl_2026_death_overs.csv_1A18798532104DE6A50BF33F279EC17A'>
+            <properties context=''>
+              <relation connection='textscan.16rm31y0vhkpim131zn380w938s5' name='ipl_2026_death_overs.csv' table='[ipl_2026_death_overs#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='batter' ordinal='0' />
+                  <column datatype='integer' name='Death_Runs' ordinal='1' />
+                  <column datatype='integer' name='Death_Balls' ordinal='2' />
+                  <column datatype='integer' name='Death_Sixes' ordinal='3' />
+                  <column datatype='real' name='Death_Strike_Rate' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='ipl_2026_death_overs.csv_1A18798532104DE6A50BF33F279EC17A' table='[Extract].[ipl_2026_death_overs.csv_1A18798532104DE6A50BF33F279EC17A]' type='table' />
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[batter]' />
+              <expression op='[batter (ipl_2026_death_overs.csv)]' />
+            </expression>
+            <first-end-point object-id='ipl_2026_batting_roi.csv_637229CD298C42FCB411FC0736732D20' />
+            <second-end-point object-id='ipl_2026_death_overs.csv_1A18798532104DE6A50BF33F279EC17A' />
+          </relationship>
+        </relationships>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Filter1' name='[Action1_B90804235DF74CE5B02426024161F9F0]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Cost Per Run Efficiency' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Filter1 1' name='[Action2_69CD6E81F49E400299822A7976392F18]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1 (2)' type='sheet' worksheet='Cost Per Run Efficiency' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1 (2)' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Cost Per Run Efficiency'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#ffffff'>  Cost Per Run Efficiency</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ipl_2026_batting_roi.csv (Multiple Connections)' name='federated.1h2m1cl05vkiby0ztwdk50etae66' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1h2m1cl05vkiby0ztwdk50etae66'>
+            <column caption='Auction Price Cr' datatype='real' name='[Auction_Price_Cr]' role='measure' type='quantitative' />
+            <column caption='Cost Per Run Lakhs' datatype='real' name='[Cost_Per_Run_Lakhs]' role='measure' type='quantitative' />
+            <column caption='Runs Scored' datatype='integer' name='[Runs_Scored]' role='measure' type='quantitative' />
+            <column caption='Batter' datatype='string' name='[batter]' role='dimension' type='nominal' />
+            <column-instance column='[batter]' derivation='None' name='[none:batter:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Auction_Price_Cr]' derivation='Sum' name='[sum:Auction_Price_Cr:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Cost_Per_Run_Lakhs]' derivation='Sum' name='[sum:Cost_Per_Run_Lakhs:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Runs_Scored]' derivation='Sum' name='[sum:Runs_Scored:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='width' field='[federated.1h2m1cl05vkiby0ztwdk50etae66].[sum:Runs_Scored:qk]' value='68' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1h2m1cl05vkiby0ztwdk50etae66].[sum:Cost_Per_Run_Lakhs:qk]' palette='orange_gold_10_0' reverse='true' type='interpolated' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+            <format attr='font-weight' value='bold' />
+            <format attr='font-size' value='11' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.1h2m1cl05vkiby0ztwdk50etae66].[sum:Cost_Per_Run_Lakhs:qk]' value='  Cost Per Run Lakhs'>
+              <formatted-text>
+                <run>  Cost Per Run Lakhs</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.1h2m1cl05vkiby0ztwdk50etae66].[none:batter:nk]' />
+              <lod column='[federated.1h2m1cl05vkiby0ztwdk50etae66].[none:batter:nk]' />
+              <color column='[federated.1h2m1cl05vkiby0ztwdk50etae66].[sum:Cost_Per_Run_Lakhs:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1.3513259887695312' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1h2m1cl05vkiby0ztwdk50etae66].[sum:Runs_Scored:qk]</rows>
+        <cols>[federated.1h2m1cl05vkiby0ztwdk50etae66].[sum:Auction_Price_Cr:qk]</cols>
+      </table>
+      <simple-id uuid='{5EDBBB9C-CE1E-4DCF-BCBA-F6741EE55DD3}' />
+    </worksheet>
+    <worksheet name='Death Overs Hitter Leaderboard'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#ffffff' fontname='Benton Sans Book'>  Death Overs Power Hitters (Overs 15–19)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ipl_2026_batting_roi.csv (Multiple Connections)' name='federated.1h2m1cl05vkiby0ztwdk50etae66' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1h2m1cl05vkiby0ztwdk50etae66'>
+            <column caption='Death Balls' datatype='integer' name='[Death_Balls]' role='measure' type='quantitative' />
+            <column caption='Death Strike Rate' datatype='real' name='[Death_Strike_Rate]' role='measure' type='quantitative' />
+            <column caption='Batter (Ipl 2026 Death Overs.Csv)' datatype='string' name='[batter (ipl_2026_death_overs.csv)]' role='dimension' type='nominal' />
+            <column caption='Batter' datatype='string' name='[batter]' role='dimension' type='nominal' />
+            <column-instance column='[Death_Balls]' derivation='None' name='[none:Death_Balls:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[batter (ipl_2026_death_overs.csv)]' derivation='None' name='[none:batter (ipl_2026_death_overs.csv):nk]' pivot='key' type='nominal' />
+            <column-instance column='[Death_Strike_Rate]' derivation='Sum' name='[sum:Death_Strike_Rate:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1h2m1cl05vkiby0ztwdk50etae66].[Action (Batter)]'>
+            <groupfilter function='level-members' level='[batter]' user:ui-action-filter='[Action1_B90804235DF74CE5B02426024161F9F0]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.1h2m1cl05vkiby0ztwdk50etae66].[none:Death_Balls:qk]' included-values='in-range'>
+            <min>30</min>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1h2m1cl05vkiby0ztwdk50etae66].[none:batter (ipl_2026_death_overs.csv):nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1h2m1cl05vkiby0ztwdk50etae66].[sum:Death_Strike_Rate:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1h2m1cl05vkiby0ztwdk50etae66].[none:Death_Balls:qk]</column>
+            <column>[federated.1h2m1cl05vkiby0ztwdk50etae66].[Action (Batter)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1h2m1cl05vkiby0ztwdk50etae66].[sum:Death_Strike_Rate:qk]' palette='orange_gold_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+            <format attr='font-size' value='11' />
+            <format attr='font-weight' value='bold' />
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1h2m1cl05vkiby0ztwdk50etae66].[sum:Death_Strike_Rate:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#ffbb28' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1h2m1cl05vkiby0ztwdk50etae66].[none:batter (ipl_2026_death_overs.csv):nk]</rows>
+        <cols>[federated.1h2m1cl05vkiby0ztwdk50etae66].[sum:Death_Strike_Rate:qk]</cols>
+      </table>
+      <simple-id uuid='{8024F66E-3556-42F4-9108-BCBB55A2EDD7}' />
+    </worksheet>
+    <worksheet name='KPI Summary TOTAL RUNS'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ipl_2026_batting_roi.csv (Multiple Connections)' name='federated.1h2m1cl05vkiby0ztwdk50etae66' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1h2m1cl05vkiby0ztwdk50etae66'>
+            <column caption='Runs Scored' datatype='integer' name='[Runs_Scored]' role='measure' type='quantitative' />
+            <column caption='Batter' datatype='string' name='[batter]' role='dimension' type='nominal' />
+            <column-instance column='[Runs_Scored]' derivation='Sum' name='[sum:Runs_Scored:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1h2m1cl05vkiby0ztwdk50etae66].[Action (Batter)]'>
+            <groupfilter function='level-members' level='[batter]' user:ui-action-filter='[Action1_B90804235DF74CE5B02426024161F9F0]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1h2m1cl05vkiby0ztwdk50etae66].[Action (Batter)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='tick-color' field='[federated.1h2m1cl05vkiby0ztwdk50etae66].[sum:Runs_Scored:qk]' value='#00000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='border-width' value='0' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' scope='rows' value='0' />
+            <format attr='border-style' scope='rows' value='none' />
+            <format attr='height' value='75' />
+            <format attr='width' value='126' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' scope='rows' value='1' />
+            <format attr='border-style' data-class='total' scope='rows' value='solid' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' value='0' />
+            <format attr='border-style' value='none' />
+            <format attr='border-color' data-class='subtotal' value='#ffffff' />
+            <format attr='border-width' data-class='subtotal' value='0' />
+            <format attr='border-style' data-class='subtotal' value='none' />
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+            <format attr='border-width' data-class='subtotal' scope='rows' value='0' />
+            <format attr='border-style' data-class='subtotal' scope='rows' value='none' />
+            <format attr='border-width' data-class='total' scope='rows' value='0' />
+            <format attr='border-style' data-class='total' scope='rows' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1h2m1cl05vkiby0ztwdk50etae66].[sum:Runs_Scored:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontcolor='#d4d4d4' fontsize='11'>TOTAL RUNS</run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#ffbb28' fontsize='20'><![CDATA[<[federated.1h2m1cl05vkiby0ztwdk50etae66].[sum:Runs_Scored:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{7137F2B0-0EA1-4B09-9993-85838C272998}' />
+    </worksheet>
+    <worksheet name='KPI Summary WICKETS'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ipl_2026_bowling_summary' name='federated.1bbbw6g1sgcx0z17bg6ks10fyn0a' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1bbbw6g1sgcx0z17bg6ks10fyn0a'>
+            <column datatype='real' name='[Wickets Taken]' role='measure' type='quantitative' />
+            <column-instance column='[Wickets Taken]' derivation='Sum' name='[sum:Wickets Taken:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1bbbw6g1sgcx0z17bg6ks10fyn0a].[sum:Wickets Taken:qk]' value='n#,##0;-#,##0' />
+            <format attr='width' value='156' />
+            <format attr='height' value='73' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1bbbw6g1sgcx0z17bg6ks10fyn0a].[sum:Wickets Taken:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontcolor='#d4d4d4' fontsize='11'>TOTAL WICKETS</run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#ffbb28' fontsize='20'><![CDATA[ <[federated.1bbbw6g1sgcx0z17bg6ks10fyn0a].[sum:Wickets Taken:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{851FFC14-7264-42E8-B8D3-55807225CE5B}' />
+    </worksheet>
+    <worksheet name='Purple Cap Bowling Efficiency'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#ffffff'>  Wicket Tally &amp; Economy Rates</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ipl_2026_bowling_summary' name='federated.1bbbw6g1sgcx0z17bg6ks10fyn0a' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1bbbw6g1sgcx0z17bg6ks10fyn0a'>
+            <column datatype='string' name='[Bowler]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Economy]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Wickets Taken]' role='measure' type='quantitative' />
+            <column-instance column='[Bowler]' derivation='None' name='[none:Bowler:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Economy]' derivation='Sum' name='[sum:Economy:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Wickets Taken]' derivation='Sum' name='[sum:Wickets Taken:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1bbbw6g1sgcx0z17bg6ks10fyn0a].[none:Bowler:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1bbbw6g1sgcx0z17bg6ks10fyn0a].[sum:Wickets Taken:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1bbbw6g1sgcx0z17bg6ks10fyn0a].[sum:Wickets Taken:qk]' palette='orange_gold_10_0' type='interpolated' />
+            <encoding attr='color' field='[federated.1bbbw6g1sgcx0z17bg6ks10fyn0a].[sum:Economy:qk]' palette='blue_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+            <format attr='font-size' value='11' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1bbbw6g1sgcx0z17bg6ks10fyn0a].[sum:Wickets Taken:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1bbbw6g1sgcx0z17bg6ks10fyn0a].[sum:Wickets Taken:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#ffbb28' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1bbbw6g1sgcx0z17bg6ks10fyn0a].[sum:Economy:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1bbbw6g1sgcx0z17bg6ks10fyn0a].[sum:Economy:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#00c49f' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1bbbw6g1sgcx0z17bg6ks10fyn0a].[none:Bowler:nk]</rows>
+        <cols>([federated.1bbbw6g1sgcx0z17bg6ks10fyn0a].[sum:Wickets Taken:qk] + [federated.1bbbw6g1sgcx0z17bg6ks10fyn0a].[sum:Economy:qk])</cols>
+      </table>
+      <simple-id uuid='{DB97100F-AC45-4662-A92A-9FA48D896381}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#22252a' />
+        </style-rule>
+      </style>
+      <size maxheight='768' maxwidth='1366' minheight='768' minwidth='1366' preset-index='0' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='75880' id='8' param='horz' type-v2='layout-flow' w='98828' x='586' y='23078'>
+            <zone h='75880' id='6' type-v2='layout-basic' w='98828' x='586' y='23078'>
+              <zone h='75880' id='5' name='Cost Per Run Efficiency' w='42926' x='586' y='23078'>
+                <zone-style>
+                  <format attr='border-color' value='#1b1b1b' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='4' />
+                  <format attr='margin' value='10' />
+                </zone-style>
+              </zone>
+              <zone h='37912' id='10' name='Death Overs Hitter Leaderboard' w='49450' x='49964' y='23078'>
+                <zone-style>
+                  <format attr='border-color' value='#1b1b1b' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='4' />
+                  <format attr='margin' value='10' />
+                </zone-style>
+              </zone>
+              <zone h='37968' id='11' name='Purple Cap Bowling Efficiency' w='49450' x='49964' y='60990'>
+                <zone-style>
+                  <format attr='border-color' value='#1b1b1b' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='4' />
+                  <format attr='margin' value='10' />
+                </zone-style>
+              </zone>
+              <zone h='75880' id='9' name='Cost Per Run Efficiency' pane-specification-id='0' param='[federated.1h2m1cl05vkiby0ztwdk50etae66].[sum:Cost_Per_Run_Lakhs:qk]' type-v2='color' w='6452' x='43512' y='23078'>
+                <zone-style>
+                  <format attr='border-color' value='#1b1b1b' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='3' />
+                  <format attr='margin' value='10' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone forceUpdate='true' h='8085' id='3' type-v2='text' w='92767' x='6647' y='1042'>
+            <formatted-text>
+              <run bold='true' fontcolor='#ffffff' fontname='Trebuchet MS' fontsize='15'>  IPL 2026: Player Performance &amp; Valuation Analytics</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#1b1b1b' />
+              <format attr='border-style' value='solid' />
+              <format attr='border-width' value='4' />
+              <format attr='margin' value='10' />
+            </zone-style>
+          </zone>
+          <zone h='13951' id='12' name='KPI Summary TOTAL RUNS' w='43682' x='7788' y='9127'>
+            <zone-style>
+              <format attr='border-color' value='#1b1b1b' />
+              <format attr='border-style' value='solid' />
+              <format attr='border-width' value='4' />
+              <format attr='margin' value='0' />
+            </zone-style>
+          </zone>
+          <zone h='13951' id='13' name='KPI Summary WICKETS' w='41328' x='58086' y='9127'>
+            <zone-style>
+              <format attr='border-color' value='#1b1b1b' />
+              <format attr='border-style' value='solid' />
+              <format attr='border-width' value='4' />
+              <format attr='margin' value='0' />
+            </zone-style>
+          </zone>
+          <zone h='8085' id='14' image-file-url='https://images.seeklogo.com/logo-png/53/1/tata-ipl-logo-png_seeklogo-531750.png' is-scaled='1' type-v2='bitmap' w='6061' x='586' y='1042'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='13951' id='16' param='horz' type-v2='layout-flow' w='7202' x='586' y='9127' />
+          <zone h='13951' id='18' param='horz' type-v2='layout-flow' w='6616' x='51470' y='9127' />
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='12611' id='17' is-scaled='1' param='C:/Users/DELL/Downloads/image-removebg-preview-removebg-preview.png' type-v2='bitmap' w='7227' x='948' y='9956' />
+        <zone forceUpdate='true' h='12389' id='19' is-scaled='1' param='C:/Users/DELL/Downloads/image-removebg-preview__1_-removebg-preview.png' type-v2='bitmap' w='8827' x='50652' y='9956' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1500' minheight='1500' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='39' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97916' id='38' param='vert' type-v2='layout-flow' w='98828' x='586' y='1042'>
+                <zone fixed-size='54' h='8085' id='14' image-file-url='https://images.seeklogo.com/logo-png/53/1/tata-ipl-logo-png_seeklogo-531750.png' is-fixed='true' is-scaled='1' type-v2='bitmap' w='6061' x='586' y='1042'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='8085' id='3' type-v2='text' w='92767' x='6647' y='1042'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#ffffff' fontname='Trebuchet MS' fontsize='15'>  IPL 2026: Player Performance &amp; Valuation Analytics</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#1b1b1b' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='4' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='99' h='13951' id='12' is-fixed='true' name='KPI Summary TOTAL RUNS' w='43682' x='7788' y='9127'>
+                  <zone-style>
+                    <format attr='border-color' value='#1b1b1b' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='4' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='99' h='13951' id='13' is-fixed='true' name='KPI Summary WICKETS' w='41328' x='58086' y='9127'>
+                  <zone-style>
+                    <format attr='border-color' value='#1b1b1b' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='4' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='97' h='12611' id='17' is-fixed='true' is-scaled='1' param='C:/Users/DELL/Downloads/image-removebg-preview-removebg-preview.png' type-v2='bitmap' w='7227' x='948' y='9956'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='96' forceUpdate='true' h='12389' id='19' is-fixed='true' is-scaled='1' param='C:/Users/DELL/Downloads/image-removebg-preview__1_-removebg-preview.png' type-v2='bitmap' w='8827' x='50652' y='9956'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='75880' id='5' is-fixed='true' name='Cost Per Run Efficiency' w='42926' x='586' y='23078'>
+                  <zone-style>
+                    <format attr='border-color' value='#1b1b1b' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='4' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='75880' id='9' name='Cost Per Run Efficiency' pane-specification-id='0' param='[federated.1h2m1cl05vkiby0ztwdk50etae66].[sum:Cost_Per_Run_Lakhs:qk]' type-v2='color' w='6452' x='43512' y='23078'>
+                  <zone-style>
+                    <format attr='border-color' value='#1b1b1b' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='3' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='263' h='37912' id='10' is-fixed='true' name='Death Overs Hitter Leaderboard' w='49450' x='49964' y='23078'>
+                  <zone-style>
+                    <format attr='border-color' value='#1b1b1b' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='4' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='264' h='37968' id='11' is-fixed='true' name='Purple Cap Bowling Efficiency' w='49450' x='49964' y='60990'>
+                  <zone-style>
+                    <format attr='border-color' value='#1b1b1b' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='4' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{601B0E74-1CC8-4394-BE11-2A03D7EABF30}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1 (2)'>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#22252a' />
+        </style-rule>
+      </style>
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='89493' id='8' param='horz' type-v2='layout-flow' w='99052' x='474' y='9622'>
+            <zone h='89493' id='6' type-v2='layout-basic' w='99052' x='474' y='9622'>
+              <zone h='89493' id='5' name='Cost Per Run Efficiency' w='43047' x='474' y='9622'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='44745' id='10' name='Death Overs Hitter Leaderboard' w='49535' x='49991' y='9622'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='44748' id='11' name='Purple Cap Bowling Efficiency' w='49535' x='49991' y='54367'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='89493' id='9' name='Cost Per Run Efficiency' pane-specification-id='0' param='[federated.1h2m1cl05vkiby0ztwdk50etae66].[sum:Cost_Per_Run_Lakhs:qk]' type-v2='color' w='6470' x='43521' y='9622'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='8737' id='3' type-v2='text' w='99052' x='474' y='885'>
+            <formatted-text>
+              <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='15'>IPL 2026 Season Performance &amp; Financial ROI Dashboard</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1000' minheight='1000' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='31' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98230' id='30' param='vert' type-v2='layout-flow' w='99052' x='474' y='885'>
+                <zone h='8737' id='3' type-v2='text' w='99052' x='474' y='885'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='15'>IPL 2026 Season Performance &amp; Financial ROI Dashboard</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='89493' id='5' is-fixed='true' name='Cost Per Run Efficiency' w='43047' x='474' y='9622'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='89493' id='9' name='Cost Per Run Efficiency' pane-specification-id='0' param='[federated.1h2m1cl05vkiby0ztwdk50etae66].[sum:Cost_Per_Run_Lakhs:qk]' type-v2='color' w='6470' x='43521' y='9622'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='44745' id='10' is-fixed='true' name='Death Overs Hitter Leaderboard' w='49535' x='49991' y='9622'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='44748' id='11' is-fixed='true' name='Purple Cap Bowling Efficiency' w='49535' x='49991' y='54367'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{0A464094-815B-4A25-898A-34031CF8AC02}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='51'>
+    <window class='worksheet' name='Cost Per Run Efficiency'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1h2m1cl05vkiby0ztwdk50etae66].[sum:Cost_Per_Run_Lakhs:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1h2m1cl05vkiby0ztwdk50etae66].[none:batter:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{053B1551-C3A3-4ABF-AE54-C06DDE4B3FF8}' />
+    </window>
+    <window class='worksheet' name='Death Overs Hitter Leaderboard'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1h2m1cl05vkiby0ztwdk50etae66].[sum:Death_Strike_Rate:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1h2m1cl05vkiby0ztwdk50etae66].[none:Death_Balls:qk]</field>
+            <field>[federated.1h2m1cl05vkiby0ztwdk50etae66].[none:batter (ipl_2026_death_overs.csv):nk]</field>
+            <field>[federated.1h2m1cl05vkiby0ztwdk50etae66].[none:batter:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{3370EA9B-41E7-4ACD-A56A-39F28B8C55AC}' />
+    </window>
+    <window class='worksheet' name='Purple Cap Bowling Efficiency'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.1bbbw6g1sgcx0z17bg6ks10fyn0a].[sum:Wickets Taken:qk]' type='color' />
+            <card pane-specification-id='2' param='[federated.1bbbw6g1sgcx0z17bg6ks10fyn0a].[sum:Economy:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1bbbw6g1sgcx0z17bg6ks10fyn0a].[none:Bowler:nk]</field>
+            <field>[federated.1bbbw6g1sgcx0z17bg6ks10fyn0a].[sum:Economy:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{0536A686-1D97-4D50-A71C-910573DCBB3A}' />
+    </window>
+    <window class='worksheet' name='KPI Summary WICKETS'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{F806FC3A-7308-461D-905D-6DDECF860AB3}' />
+    </window>
+    <window class='worksheet' name='KPI Summary TOTAL RUNS'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <selection-collection>
+          <tuple-selection>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1h2m1cl05vkiby0ztwdk50etae66].[sum:Runs_Scored:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>6376</value>
+              </tuple>
+            </tuple-reference>
+          </tuple-selection>
+        </selection-collection>
+      </viewpoint>
+      <simple-id uuid='{6583000A-990D-4FA7-90FB-20CB27580EA2}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Cost Per Run Efficiency'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Death Overs Hitter Leaderboard' />
+        <viewpoint name='KPI Summary TOTAL RUNS' />
+        <viewpoint name='KPI Summary WICKETS' />
+        <viewpoint name='Purple Cap Bowling Efficiency' />
+      </viewpoints>
+      <active id='3' />
+      <simple-id uuid='{47C6C91F-0B12-46D1-97B1-4F984EF9A4C6}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1 (2)'>
+      <viewpoints>
+        <viewpoint name='Cost Per Run Efficiency'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Death Overs Hitter Leaderboard' />
+        <viewpoint name='Purple Cap Bowling Efficiency' />
+      </viewpoints>
+      <active id='10' />
+      <simple-id uuid='{BBBBBB46-BB13-42FA-9467-AEBF8488D519}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Cost Per Run Efficiency' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Dashboard 1 (2)' width='192'>
+      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
+      TkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Death Overs Hitter Leaderboard' width='192'>
+      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
+      9i8A2U7DoAIS/AAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='KPI Summary TOTAL RUNS' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAGqUlEQVR4nO3azYskZwHH8d9T1V3dMz090/OSnXXcXbIxBz3JRvTgIQcvIUouXoLoXUgu
+      /gOCEi++XPQgiKIgQUQQBSUgwUsQEXHRg5fELJvX3Z2dzey8dM90V3U9j4eanZk1G1AP26O/
+      7weGKaoeqquhvt3PUzMhpZQEGAohhGzWFwHMUuveRkxJZT3LSwEevuMAJrX06vYsLwV4+JgC
+      wRoBwBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoB
+      wBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoB
+      wBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoB
+      wBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoB
+      wBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoB
+      wBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoB
+      wBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoB
+      wBoBwBoBwFpr1hcAX6HcVyhHkoLi3IpCOVSIlWJnSWE6VpgeSiFTnFtVqEaSpFT0FcqhUrEg
+      hSClqOzgPUlJsTtQqCulVldKtZSiQnWoVCwoxKlS1lKoRgrTiWJ3IIlvAMxQai9IWUtxflUh
+      Vs3NPr+mbLyj1FmUQq44vyaFTGE6UZiOJakJ4/gkSQpBcW5V2XhHoZ40N36cKtSVQqyUTXal
+      ulSoy+bm7z0i5W1JBIBZCuFkO9ZS1pIU3j8uVkc3dS3F6ftPMx0rH95SKvoPeI1MynKFWCmF
+      XKlYUDa6fRwTAeBMSK1uMz2phkchnGimMfOKxYJCdSDFqFAOm2gkpbyj2OlLdamUtZSVQ4Xq
+      QOnoUz4Wi82+VEupVmrNSXUpiTUAZix2B1LIpSw0c/hYK871mmNzA0lBqeg1Y6TmBm7PNTd/
+      CGrWD8vN8VhJWVuajpVCkPKOYrclZbmm/Q0ptKRYKqTUrBNEAJi105/2eaGUnzoW2ke/T425
+      t33fuHv7CklqAvmAY8q6Sqdf/r+9buD/AQHAGgHgjEoK8VDt8oZCnDxwRFYfqF1tNo9QpeaR
+      aKr+5ac+NX50dL7yeB9rAJw9Kaq//wed2/qJsjTWpLioty98XSk7mduvbP9Sy3d/qyweqs4X
+      tLn+nMpiQxfe+ZpCmkpKaldburP2Bb238qyWdl/W2vbPlcWxJsWjeuviNyRJIaWUJOlwmvTq
+      9izeLXC/dnlDj73xnP7xkZ8p5vMPHpSmzQI3JS3t/V6D3d/pzUvfPjlHtanHrn9Z1y7/SHm9
+      q0vvfFXXLv9QMe8dj7myngW+AXDmdMevK2bz2rj5LbWnt7Wz+JTuLj/T/FHrWKb+3ivqTq6p
+      v/9H3Tz/lZNDKWll+1fa6z+paXtNC6M/K4ZCH775TbWm27o7+Kx2lp6WxBQIZ1Aeh0oK2hk8
+      rRRauvDuCyqLDY0WPnlqVFKnfFtz49eUQqGQquMjrem2lnZf1huPfk9SM/dXyLU9eEZBURfe
+      fUGT4lIz9mG+MeDfMSkuKYVCw96npBC0v/BpdSZv3h9AyHVn7YtSSuod/FUbN7+j1x9/UZK0
+      vPMbjXpPqGxvSJLK4qLqrKdR7wlJmYa9T6hTviWJp0A4g8bdxxVUa3X7F5of/U290VUdzn1M
+      req21je/rxArndv8gXrDv6g7fk2Le6+oap+XJGX1ngY7L+nO6rPH/2s06n1c7emWVu7+Wr2D
+      q5o/+LsOux+VxCIYZ1S7vKFzWz9Wq97VztJT2l38jB6581Pl9VC31p/XYPcl9Yd/UlaPNOlc
+      1tbal1S3ltWZXFdvdFXby5+/b83QmVzX2p0Xldf72hl8Tnv9J3XlfB4IAP8TQiz1oVvf1a3z
+      zytmH/Bk6D90ZT0jAPi6sp4F1gCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCw
+      RgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCw
+      RgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCw9k/7w+A9c0o1aQAAAABJRU5ErkJg
+      gg==
+    </thumbnail>
+    <thumbnail height='192' name='KPI Summary WICKETS' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Purple Cap Bowling Efficiency' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
